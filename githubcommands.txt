@@ -1,0 +1,86 @@
+İnstallation operaitons 
+
+$ sudo apt update
+$ sudo apt install git
+
+Check installation with
+
+$ git --version
+
+Config operations -- set your usarname and mail
+
+$ git config --global user.name "Your Name"
+$ git config --global user.email "youremail@domain.com"
+$ git config --global user.email # İf you see gloabal username
+
+
+Operations on the github repository
+
+First, create a repository through the website and go to your local project file 
+
+$ git init 
+$ git add .
+$ git commit -m "Hello github"
+
+Let's push our local project now
+
+$ git remote add origin https://github.com/mustafakurban/githubcommands 
+$ git push -u origin master
+
+Get information about commits
+
+$ git status # update information
+$ git log # give Author, date , commit number
+
+Operations made on the file
+
+$ git blame <file_name> 
+
+Branching and merging operations
+
+$ git branch  #shows which branch it is in
+$ git branch <user-command> # generates branching 
+$ git merge <branch_1> <branch_2> 
+
+$ git chechout <branch_name> # change branch
+
+$ git diff <branch_1>  <branch_2> # Differences between branches
+
+$ git branch -d <branch_name> # delete branch
+
+$ git branch -m <branch_name> <new_branch_name> # change branch name
+
+rolling back the last commit
+
+$ git revert <commid_id> # example id : 0264ccf3edcf4346432a9ba5cc77934c8f120100 
+or 
+$ git reset --hard <commit_id>
+
+download a github project 
+
+$ git clone <repository link>
+
+$ git show # gives information about created objects
+$ git pull # Updates the local repository
+$ git rm # delete created files 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
